@@ -47,7 +47,7 @@ const SpeedControl: React.FC<SpeedControlProps> = ({
                 <label>Auto Fire Interval (ms): {autoFireInterval}</label>
                 <input
                     type='range'
-                    min='100'
+                    min='500'
                     max='5000'
                     step='100'
                     value={autoFireInterval}
