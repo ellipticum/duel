@@ -1,0 +1,60 @@
+.customColorPicker {
+    position: absolute;
+    background: var(--color-light-darker-transparent-90);
+    backdrop-filter: blur(0.25rem);
+    padding: var(--spacing-sm);
+    border-radius: var(--spacing-sm);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+.colorLabel {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-base);
+    color: var(--color-dark);
+}
+
+.colorInputText {
+    width: 7rem;
+    margin-right: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    border-radius: var(--spacing-sm);
+    border: 0.0625rem solid var(--color-secondary); /* 1px в rem */
+    font-size: var(--font-size-sm);
+    color: var(--color-dark);
+}
+
+.colorInputPicker {
+    width: 8.5rem;
+    height: 8.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--spacing-sm);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px и 4px в rem */
+}
+
+.colorPalette {
+    margin-top: var(--spacing-sm);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 8.5rem;
+    gap: var(--spacing-sm);
+}
+
+.colorBlock {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    border-radius: var(--spacing-sm);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.colorBlock.selected {
+    border: 0.125rem solid var(--color-dark);
+}
+
+.colorBlock:not(.selected) {
+    border: 0.0625rem solid var(--color-secondary);
+}

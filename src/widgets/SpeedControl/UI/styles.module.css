@@ -1,0 +1,36 @@
+.controlWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-base);
+  border: 0.125rem solid var(--color-secondary-transparent-50);
+  border-radius: 0.5rem;
+  flex: 1;
+  background-color: var(--color-secondary-transparent-20);
+  margin: var(--spacing-sm);
+}
+
+.controlWrapper h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-dark);
+  text-align: center;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-base);
+}
+
+.control label {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-dark);
+}
+
+.control input[type='range'] {
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--color-primary-transparent-10);
+  border-radius: 0.25rem;
+}

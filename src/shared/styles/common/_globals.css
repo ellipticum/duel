@@ -1,0 +1,86 @@
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+
+  min-height: 100vh;
+
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 200;
+
+  font-family: 'TT Firs Neue', sans-serif;
+}
+
+button {
+  color: inherit;
+  cursor: pointer;
+
+  & * {
+    pointer-events: none;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2.75rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 3.5vw, 2.25rem);
+}
+
+h3 {
+  font-size: clamp(1.15rem, 3.0vw, 1.75rem);
+}
+
+::-webkit-scrollbar {
+  width: .35rem;
+  height: .35rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-corner {
+  background: #f1f1f1; /* Цвет углов скроллбара */
+}
+
+[data-mode='dark'] {
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-transparent-50);
+  }
+}
+
+[data-mode='light'] {
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+
+  gap: .5rem;
+
+  & p {
+    font-size: 1.25rem;
+    line-height: 150%;
+    letter-spacing: -0.025rem;
+
+    text-align: center;
+  }
+}
